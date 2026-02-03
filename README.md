@@ -87,16 +87,16 @@ Architecture	    REST APIs, agent workflows
 
 ---
 
-## Running the Project Locally
+# Running the Project Locally
 
-# Backend
+## Backend
 cd backend
 pip install -r requirements.txt
 
 export OPENAI_API_KEY="your_api_key"
 uvicorn backend.main:app --reload --port 8000
 
-# Frontend
+## Frontend
 
 Open frontend/index.html in your browser
 (or serve it with any static file server).
@@ -104,13 +104,13 @@ Open frontend/index.html in your browser
 
 ---
 
-## Example Workflow
+# Example Workflow
 
-# Input:
+## Input:
 
 “Do you have a driver-side headlight Switch for a 240Z? How much shipped to NC?”
 
-# Output:
+## Output:
 
 Intent: availability
 
