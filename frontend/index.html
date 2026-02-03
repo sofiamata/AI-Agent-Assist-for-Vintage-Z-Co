@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agent Assist</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Agent Assist</h1>
+      <p class="sub">AI workflow for customer messages (FastAPI + LangGraph).</p>
+    </header>
+
+    <section class="card">
+      <label for="msg">Customer message</label>
+      <textarea id="msg" rows="5" placeholder="e.g. Do you have a driver-side headlight bucket for a 240Z? How much shipped to NC?"></textarea>
+
+      <div class="row">
+        <button id="runBtn">Generate Agent Assist</button>
+        <button id="clearBtn" class="secondary">Clear</button>
+      </div>
+
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Intent</h2>
+        <div id="intent" class="mono muted">—</div>
+      </div>
+
+      <div class="card">
+        <h2>Draft Reply</h2>
+        <div id="reply" class="pre muted">—</div>
+      </div>
+
+      <div class="card">
+        <h2>Summary</h2>
+        <div id="summary" class="pre muted">—</div>
+      </div>
+
+      <div class="card">
+        <h2>Next Actions</h2>
+        <ul id="actions" class="muted">
+          <li>—</li>
+        </ul>
+      </div>
+
+      <div class="card full">
+        <h2>Inventory Hits</h2>
+        <div id="inventory" class="muted">—</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">Backend:</span> <span class="mono">http://localhost:8000</span>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
