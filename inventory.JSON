@@ -1,0 +1,16 @@
+[
+  {
+    "part": "Headlight Bucket",
+    "model": "240Z",
+    "side": "Driver",
+    "price": 120,
+    "in_stock": true
+  },
+  {
+    "part": "Steering Wheel",
+    "model": "280Z",
+    "side": "Driver",
+    "price": 3000,
+    "in_stock": true
+  }
+]
